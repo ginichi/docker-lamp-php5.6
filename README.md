@@ -1,6 +1,7 @@
-# docker-lamp5.6
-Docker setting for php5.6.
+# docker-lamp-php5.6
+docker-composer settings for php5.6.
 
+## Include
 - php:5.6-apache [dockerhub official]
     - iconv mcrypt pdo_mysql mbstring json xml tokenizer zip
 - mysql:5.7 [dockerhub official]
@@ -24,10 +25,10 @@ Docker setting for php5.6.
 ## How to use
 
 ```
-git clone git@github.com:murodon/docker-lamp5.6.git docker-lamp
+git clone git@github.com:murodon/docker-lamp-php5.6.git docker-lamp
 cd docker-lamp
 ```
-You can eddit the .env file.
+The .env file is settting for mysql user. 
 
 `vi .env`
 
