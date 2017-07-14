@@ -9,8 +9,6 @@ services:
         depends_on:
             - app-db
         env_file: .env
-        volumes:
-            - ./www:/var/www
     app-db:
         build: ./mysql
         env_file: .env
