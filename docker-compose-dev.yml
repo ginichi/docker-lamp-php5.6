@@ -1,0 +1,9 @@
+version: "2"
+services:
+  app:
+    volumes:
+      - lamp-sync:/var/www:nocopy # nocopy is important
+
+volumes:
+  lamp-sync:
+    external: true

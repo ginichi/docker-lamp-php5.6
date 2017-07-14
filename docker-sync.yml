@@ -1,0 +1,6 @@
+version: '2'
+
+syncs:
+  lamp-sync:
+    sync_strategy: 'unison'
+    src: './www/'
