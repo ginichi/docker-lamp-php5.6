@@ -24,6 +24,16 @@ docker-composer settings for php5.6.
 
 ## How to use
 
+pre install docker-sync.
+
+```
+gem install docker-sync
+brew install fswatch
+brew install unison
+```
+
+Repository Download.
+
 ```
 git clone git@github.com:murodon/docker-lamp-php5.6.git docker-lamp
 cd docker-lamp
@@ -35,7 +45,7 @@ The .env file is settting for mysql user.
 Next, build and start containers.
 
 ```
-docker-compose up -d
+docker-sync-stack start
 ```
 
 web:
