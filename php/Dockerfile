@@ -15,7 +15,7 @@ RUN apt-get update \
     libpng12-dev \
     openssl libssl-dev \
     libxml2-dev \
-    && docker-php-ext-install -j$(nproc) iconv mcrypt pdo_mysql mbstring json xml tokenizer zip \
+    && docker-php-ext-install -j$(nproc) iconv mcrypt pdo_mysql mysqli mysql mbstring json xml tokenizer zip \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install -j$(nproc) gd
 
