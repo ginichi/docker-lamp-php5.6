@@ -17,13 +17,15 @@ services:
         ports:
             - "13306:3306"
     mailcatcher:
-        image: schickling/mailcatcher
+        build: ./mailcatcher
         restart: always
         ports:
             - "1025:1025"
             - "1080:1080"
         environment:
             MAILCATCHER_PORT: 1025
+        depends_on:
+            - app
 volumes:
     app-db:
         driver: local
